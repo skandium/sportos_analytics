@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 from tqdm import tqdm
 
-from scraper.db import init_db, upsert_event, upsert_distance, upsert_results, get_scraped_event_ids, infer_gender
+from scraper.db import init_db, upsert_event, upsert_distance, upsert_results, get_scraped_event_ids, infer_gender, load_excluded_events
 from scraper.events import discover_events, get_distances
 from scraper.results import fetch_distance_html, parse_distance_html
 
@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 
 def scrape(since_years: int = 2, limit: int | None = None, db_path: str = "data/results.duckdb",
-           fresh: bool = False):
+           fresh: bool = False, incremental: bool = False):
     """Discover events, fetch distances and save raw HTML. No parsing."""
     if fresh:
         import os
@@ -28,7 +28,7 @@ def scrape(since_years: int = 2, limit: int | None = None, db_path: str = "data/
     existing = get_scraped_event_ids(con)
 
     log.info("Discovering events since %s (%d already in DB)", since_date, len(existing))
-    events = discover_events(since_date, existing, limit=limit)
+    events = discover_events(since_date, existing, limit=limit, stop_on_existing=incremental)
 
     if not events:
         log.info("No new events to scrape")
@@ -57,14 +57,35 @@ def refetch(db_path: str = "data/results.duckdb"):
         fetch_distance_html(dist_id, url)
 
 
-def parse(db_path: str = "data/results.duckdb"):
+def parse(db_path: str = "data/results.duckdb", remove_excluded: bool = False, incremental: bool = False):
     """Parse all results from stored HTML into the database."""
     con = init_db(db_path)
+    excluded_events = load_excluded_events(con)
 
-    distances = con.execute("SELECT id FROM distances ORDER BY id").fetchall()
+    if remove_excluded and excluded_events:
+        for event_id in excluded_events:
+            deleted = con.execute("""
+                DELETE FROM results WHERE distance_id IN (
+                    SELECT id FROM distances WHERE event_id = ?
+                )
+            """, [event_id]).rowcount
+            if deleted:
+                log.info("Removed %d results for excluded event %s", deleted, event_id)
+
+    if incremental:
+        distances = con.execute("""
+            SELECT d.id, d.event_id FROM distances d
+            WHERE NOT EXISTS (SELECT 1 FROM results r WHERE r.distance_id = d.id)
+            ORDER BY d.id
+        """).fetchall()
+        log.info("Incremental mode: %d unparsed distances", len(distances))
+    else:
+        distances = con.execute("SELECT id, event_id FROM distances ORDER BY id").fetchall()
 
     reparsed = 0
-    for (dist_id,) in tqdm(distances, desc="Parsing"):
+    for dist_id, event_id in tqdm(distances, desc="Parsing"):
+        if event_id in excluded_events:
+            continue
         results = parse_distance_html(dist_id)
         if results:
             con.execute("DELETE FROM results WHERE distance_id = ?", [dist_id])
@@ -99,6 +120,11 @@ def parse_event(event_ref: str, db_path: str = "data/results.duckdb", dry_run: b
         return
 
     event_id, event_name, event_date = row
+
+    if event_id in load_excluded_events(con):
+        log.error("Event '%s' is excluded (listed in excluded_events.txt).", event_id)
+        con.close()
+        return
     log.info("Event: %s  %s  (%s)", event_date, event_name, event_id)
 
     distances = con.execute(
@@ -172,12 +198,15 @@ if __name__ == "__main__":
     sp_scrape.add_argument("--years", type=int, default=2, help="How many years back")
     sp_scrape.add_argument("--db", default="data/results.duckdb")
     sp_scrape.add_argument("--fresh", action="store_true", help="Delete database and start from scratch")
+    sp_scrape.add_argument("--incremental", action="store_true", help="Stop at first already-ingested event")
 
     sp_refetch = subparsers.add_parser("refetch", help="Re-fetch HTML for all existing distances")
     sp_refetch.add_argument("--db", default="data/results.duckdb")
 
     sp_parse = subparsers.add_parser("parse", help="Parse stored HTML into database")
     sp_parse.add_argument("--db", default="data/results.duckdb")
+    sp_parse.add_argument("--remove-excluded", action="store_true", help="Delete existing results for excluded events")
+    sp_parse.add_argument("--incremental", action="store_true", help="Only parse distances with no results yet")
 
     sp_list = subparsers.add_parser("list-events", help="List events (optionally filter by name/ID)")
     sp_list.add_argument("query", nargs="?", default="", help="Filter by name or ID substring")
@@ -197,11 +226,11 @@ if __name__ == "__main__":
     )
 
     if args.command == "scrape":
-        scrape(since_years=args.years, limit=args.limit, db_path=args.db, fresh=args.fresh)
+        scrape(since_years=args.years, limit=args.limit, db_path=args.db, fresh=args.fresh, incremental=args.incremental)
     elif args.command == "refetch":
         refetch(db_path=args.db)
     elif args.command == "parse":
-        parse(db_path=args.db)
+        parse(db_path=args.db, remove_excluded=args.remove_excluded, incremental=args.incremental)
     elif args.command == "list-events":
         list_events(args.query, db_path=args.db)
     elif args.command == "parse-event":

@@ -56,7 +56,7 @@ def _get_event_date_and_has_results(slug: str) -> tuple[date | None, bool]:
 
 
 def discover_events(since_date: date, existing_ids: set[str],
-                     limit: int | None = None) -> list[dict]:
+                     limit: int | None = None, stop_on_existing: bool = False) -> list[dict]:
     """Discover new running events from the listing pages.
 
     Returns a list of event dicts. Skips already-scraped events.
@@ -98,6 +98,10 @@ def discover_events(since_date: date, existing_ids: set[str],
 
             # Skip already-scraped events (no HTTP needed)
             if slug in existing_ids:
+                if stop_on_existing:
+                    log.info("Hit existing event %s, stopping (incremental mode)", slug)
+                    stop = True
+                    break
                 log.debug("Already scraped: %s", slug)
                 continue
 

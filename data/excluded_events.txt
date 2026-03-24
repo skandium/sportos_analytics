@@ -1,0 +1,17 @@
+# Excluded event IDs: all results for these events are skipped during parsing
+# Format: one event ID per line
+# Lines starting with # are ignored
+
+# 38. Otepää-Tartu Jooksumaraton (2011-03-26)
+67
+
+# Saaremaa Kolme Päeva Jooksud
+90
+153
+194
+236
+322
+428
+496
+661
+765

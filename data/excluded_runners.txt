@@ -1,3 +1,743 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7c969a814be65aa2b4464e2b95e6c2e3e89ac06499a0cdd1dc8c346ad387f52
-size 12055
+# Non-Estonian runners to exclude from rankings
+# One name per line, lines starting with # are ignored
+
+# 5K
+Alise Petrova
+Beate Jansone
+Mara Caure
+Karina Jaunmuktane
+Indra Mackevièa
+Kristers Kudlis
+Solomom Gatchoca
+Eivind Jenssen
+Oliver Grauen
+Hermanis Valtass
+Emils Stiprais
+Roberto Abia
+
+# 10K
+Dmitrijs Serjogins
+Julius Muriuki Wahome
+Julius Muriuki
+David Kogei
+Solomon Gatchoka Kagimbi
+Gachoka Kagimbi Solomon
+Francis Kirwa
+Vasyl Koval
+Mareks Floroseks
+Otmane Nait-Hammou
+Marten Boström
+Ibrahim Mukunga Wachura
+Marius Diliunas
+Mareks FloroEks
+Maksym Salii
+Janne Holmen
+Miika Takala
+Kestutis Jankunas
+Konstantins Savcuks
+Ryan Holroyd
+Normunds Duksis
+Marko Partanen
+Roberts Glazers
+Ugis Jocis
+Mikko Tyni
+Dainius Saucikovas
+Valentin Unterholzner
+Morten Sätha
+Mohammed Kalil Nedi
+Agate Caune
+Agata Caune
+Wambui Tabitha Gichia
+Rasa Drazauskaite
+Rasa Drazdauskaite
+Olesya Dydovonyuk
+Kristina Vegh
+Gyte Norgiliene
+Usila Koech Jepkimoi
+Chloe Dooley
+Maria Caballero
+Santa Viskere
+Julia Bulina
+Evelina Usevaite
+Teija Stenman
+Kateryna Fomichova
+Marta Luize Petersone
+Bret Schär
+Anete Midrijane
+Inga Juodeskiene
+Yuriy Rusyk
+
+# Half marathon
+Dominic Kiptarus
+Andrian Lehmann
+Lina Kiriliuk
+Weldom Kerich
+Henry Kipsang
+Victor Kamuren Ketienya
+Mohamed Hajjy
+Collins Kipkirui Kipkorir
+Mike Chematot
+Rhonzas Lokitam Kilimo
+Asabel Kiplimo Naiboi
+Nehmiah Kipyegon
+David Korichei Cheserek
+Teresa Nyakola Gela
+Solomon Koech
+Helah Kiprop
+Yahia El Sayed
+Betty Kibet
+Andy Coendet
+Evans Cheruiyot
+Maru Teferi
+Ali Chebures
+Elvis Chevor Tabarach
+Eric Leon Ndiema
+Olivier Irabaruta
+Sentayw Aweke Lewog
+Solomon Gachoka Kagimbi
+Janis Viskers
+Stefano La Rosa
+David Nilsson
+Nicholas Mulinge Makau
+Jacob Yator
+Janis Girgensons
+Valerijs Zolnerovics
+Joris Keppens
+Aigars Matisons
+Mourad El Bannouri
+Magnus Sirnes Hjellum
+Tibor Vegh
+Arttu Vattulainen
+Otto Laitinen
+Vilho Loukkalahti
+Michele Donnini
+John Volkenandt
+Erlend Gjerdevik Soertveit
+Gavin Hooper
+Haakon Engelsen Berg
+Jostein Rogstad
+Belal Ahmed
+Claes Bengtsson
+Morten Saetha
+Fredrik Uhrbom
+Joseph Turner
+George Jackson
+Alfreds Apinis
+Vadims Marinecs
+Maxime Brochet
+Ossi Peltoniemi
+Alexander Söderberg
+Oleksandr Marchuk
+Adam Stippa
+Kristaps Kaimins
+George Ellem
+Janne Mänkärlä
+Leif Tinus Smith Naess
+Mikko Leino
+Anastasija Zakharova
+Margarita Plaksina
+Beatrice Cheserek
+Janet Ruguru Gichumbu
+Lydia Jebichi Korir
+Janet Ruguru Gichumbi
+Rebecca Chepkwemoi
+Gladys Jepkemoi Kwambai
+Kebeda Aberash Shilima
+Vivian Jepkogei Cheruiyot
+Alemaddis Eyayu Sisay
+Alemtsehay Mekuria Alamirew
+Addisalem Belay Tegegn
+Nina Lauwaert
+Jelena Prokopcuka
+Margaret Agai
+Nigisti Haftu Tesfay
+Lenah Jerotich
+Addisie Mislenew
+Jussi-Pekka Partanen
+Ivyne Jeruto Lagat
+Soukaina Atanane
+Adela Paulina Baltoi
+Andrea Castelnovo
+Aicha Bani
+Remalda Kergyte
+Kateryna Karmanenko
+Maria Söderström
+Jelena Abele
+Ilona Marhele
+Anne Aarrestad
+Katie King
+Irina Latve
+Eldbjoerg Moxnes
+Sofie Kjos Bergum
+Jutta Paajamaa
+Hanne Marthe Lie
+June Kieu-Van Thi Bui
+Alison Bogie
+Jens Schlottag
+Minna Saarnilehto
+Victoria Vermelid
+
+# Marathon
+Fanny Kiprotich Bungei
+Sammy Kigen
+Joseph Munywoki
+Josphat Leting
+Jonathan Yego Kiptoo
+Isaack Kosgei
+Hassane Ahouchar
+Bernard Cheruiyot Sang
+Samwel Kiptoo
+Gilbert Kibet
+Yuki Kawauchi
+Joseph Kyengo Munywoki
+Geleto Barecha Tolosa
+Wisley Kimeli
+Bernard Kitur
+Pharis Kimani
+Dadi Tesfaye Beyene
+Ishmael Chelanga Kalale
+Silas Kiprotich Kurui
+Diriba Demisse Haile
+Moses Mbugua Gaikariga
+Kenneth Kiprop Omulo
+Lahcen Mokraji
+Abiyot Guta Duguma
+Mesfin Admasu Abebe
+Edwin Koech
+Magut Robert Kimaru
+Mehari Gebre Baraki
+Julius Kiprono Tarus
+Ibrahim Mukunga Wachira
+Ibrahim Wachira Mukunga
+Aki Nummela
+Wesley Ledama
+Frode Stenberg
+Patrik Eklund
+Ibrahim Mukunga
+Porho David Le
+Peter Ngeno
+Arturs Bareikis
+Felix Stewart
+Antti Hartikainen
+Sondre Fylling
+Carl Riisgaard
+Federico Bordignon
+Matti Jonkka
+Michael Smith
+Floris Van Drunen
+Raitis Jirgensons
+Valdis Nilovs
+Ketil Stene
+Eric Storvall
+Jonathan Rosenbrier
+Antonio Martine Martin
+Enrico Ponta
+Vaidas Ramanauskas
+Bart Simoens
+Simon Haglund
+Ilze Vaivode
+Andrius Simkus
+Kiprotich Kirui
+Anu Gummerus
+Sabastian Porter
+John Kipkemoi Kirui
+Dickson Terer
+Kiprop Tonui
+Moses Too
+Rotich Bernard Kipkemoi
+Hosea Kipkemoi Kiplagat
+Felix Kipkorir Kangogo
+Sanna Haikonen
+Bernard Kipsang Chumba
+Raija Heimonen
+Robert K. Magut
+Robert Kimaru Magut
+David Kipkorir Rutoh
+Korir Paul Kiprotich
+David Makori Omiti
+Pauline Mutwa Thitu
+Pamela Rotich
+Rebecca Korir
+Devesh Khatu
+Naomi Jepkosgei Maiyo
+Teemu Toivanen
+Uldis Klavins
+Daisy Langat
+Dessi Ethlemahu Sintayehu
+Almaz Alemu Balcha
+Jevgenijs Turkins
+Irene Chepkirui
+Pauline Muthwa Thitu
+Ruth Matebo
+Marta Markos Ayele
+Helen Bell
+Aynalem Teferi
+Emily Chepkemoi Samoei
+Melissah Gibson
+Inga Cimarmanaite
+Mulu Seboka Seyfu
+Amanda Krumina
+Ales Debeljak
+Thea Haug
+Pauliina Seppänen
+Angela Mccann
+Saara Ylisaukko-Oja
+Normunds Laucis
+Reymonenq Magali
+Vilde Moser
+Elina Junnila
+Rebecca Bunting
+Kristin Husby
+Katrine Bonne Wulf
+Karolina Wasniewska
+Kristina Krista Ozolina
+Mercy Kwambai
+Hildah Jepkogei Cheboi
+Euliter Jepchirchir Tanui
+Tejitu Siyum Alemayehu
+Sage Pearce-Higgins
+Roselidah Jepketer
+Emil Kalered
+Denis Vician
+Egemen Mercanlioglu
+Joonas Häyhä
+Domantas Balsys
+Neon Obrien
+Matthew Peleszok
+Jakob Meloy
+Ellis Bracey
+Linet Toroitich Chebet
+Webalem Basazew Ayele
+Harriet Jepchumba Chebore
+Faith Jerotich Kimutai
+Estefania Unzu Ripoll
+Miyuki Okubo
+Vita Devjatnikova
+Ulla Huopaniemi
+Marika Johanna Jylhä
+Marianne Mäkinen
+Rima Stankevice
+Saskia Ricks
+Ayumi Tamai
+Itziar Mendez
+Olha Bereza
+Joanna Drewnicka-Ogrodnik
+Cecilia Ricks
+Tilda Hovi
+Manon Massit
+Emma Le Bris
+Toma Dmitrijeva
+Jovita Balsiene
+Madeline Rolfe
+Tasha Kobzarenko
+Maria Bergkvist
+Helena Liepina
+Noora Hostikka
+Aurelija Kisieliute
+Alejandra Pascual-Garrido
+Florence Thuleau Herault
+Anna Benger
+Mervi Kaukko
+Lauren Christiansen
+
+# Comprehensive sweep (all distances, top 300 per distance/gender)
+
+# Finnish
+Kari Kopola
+Anne Väisänen
+Pekka Pöllänen
+Pauliina Nieminen
+Sanna Kullberg
+Merja Rautiainen
+Maiju Niemelä
+Satu Uuttu
+Samu Grönman
+Tuomas Hyttinen
+Susanna Saastamoinen
+Outi Poikonen
+Jaakko Kero
+Mimmi Koivisto
+Antti Sadeharju
+Arto Suninen
+Eveliina Puhalainen
+Tapani Virtanen
+Aulikki Leivo
+Leena Mäkäräinen
+Eila Pakkanen
+Harri-Pekka Tikkanen
+Hilkka Kontro
+Joonas Karttunen
+Tiina Toivonen
+Anna-Sofia Lahti
+Matleena Hintsala
+Heidi Voutilainen
+Joonas Kuisma
+Kimmo Kerman
+Pekka Kulpakko
+Ville Hyvönen
+Ari Mattila
+Eeva-Liisa Hotakainen
+Iina Lohvansuu
+Matleena Ojapalo
+Charlotta Saulamaa
+Joanna Virtanen
+Marika Jylhä
+Elina Suomela
+Juliet Lehtonen
+Jonna Elovaara
+Merita Kummila
+Saara Malinen
+Antti Vainio
+Tero Mähönen
+
+# Latvian
+Dainis Zuburs
+Valērijs Žolnerovičs
+Valerijs Zolnerovich
+Maris Abele
+Liene Puke
+Markus Harbo
+Markus Vall
+Kristine Valle
+Jolanta Liepina
+Janis Arsenikovs
+Arnis Ozolins
+Ieva Dimza
+Marta Špundzane
+Jaroslavs Halimoškins
+Salvis Grusevs
+Iveta Pupola
+Agnese Pastare
+Liene Petersone-Burgmane
+Inese Avsejeva
+Asnate Caune
+Henrijs Lerme
+Zemgus Zagata
+Lasma Avotina-Zaglova
+Eva Žilde-Rudzîte
+Liene Petersone
+Janis Pastars
+Inga Zalite
+Santa Matule
+Evita Grencberga
+Vitalijs Cibisovs
+Gunars Kegis
+Guntis Grinvalds
+Iren Irbe
+Anastasija Vakulica
+Teodors Godins
+Edgars Brigmanis
+Dimitris Slesaronoks
+Lauris Repsa
+Janis Tamuzs
+Maris Pakarklis
+
+# Lithuanian
+Dovile Tamosiunaite
+Zigmas Reisas
+Andrius Juknevicius
+Egle Skruzdyte
+Agne Saltenyte
+
+# Norwegian/Swedish/Danish
+Morten Sætha
+Anne Skatland
+Anders Thingstad
+Knut Hjertvik
+Ola Matre
+Johan Nordby
+Brede Olsen
+Else Bøifot
+Emma Tönnessen
+June Nilsen
+Sofie Venborg Eriksen
+Louise Pernille Christensen
+Lisa Skov Nielsen
+Elin Forsell
+Magnus Hellström
+Henrika Backlund
+Malin Sellen
+Christine Af Geijerstam
+Karoline Saltermark
+Rasmus Boisen
+Emilie Bäk Andres
+
+# German/French/Other European
+Juliane Thiel
+Brigitte Dindorf
+Martin Dindorf
+Yannick Schönfeldt
+Simon Nussbaum
+Valentin Schneuwly
+Helene Lucie Gleizes
+Guillaume Boutin
+Romain Menard
+Edern Lazou
+Delphine Devantey
+Florence Weiss
+Davide Pruneri
+Angela Castronuovo
+Vinko Jost
+Jakub Hurych
+Magdalena Parchowska
+Eniko Csoma
+Henrik Kantelhardt
+Jette Lee Baumann
+Jonathan Philip Rosenbreier
+Olivia Zwick
+Katsiaryna Kolasava
+
+# British/American/Irish/Dutch
+William Ewens
+Grace Williams
+Ruairi Long
+Chris Mckeown
+Ayisha Mitchell
+Mallory Beaudreau
+Kaitlyn Victoria Kerr
+Kaitlyn Kerr
+Kirsten Van Dorp
+Annet Schipper
+Tom Kuyken
+Younes Moppert
+Michael Blackudde
+Martin Simpson
+Piia Doyle
+Cris Poll
+Lars Steus
+Lars Lukas Steurs
+
+# Russian/Other visitors
+Irina Pankovskaya
+Yulia Khazova
+Anastasia Kushnirenko
+Alexander Vorobyev
+Kulmatitskii Marat
+Ivan Bubnov
+Sofia Emelianenko
+Aino Haritonova
+Anatoli Gorbunov
+Biancamaria Boev
+
+# African
+Wachura Ibrahim Mukunga
+Peter Kiprotich
+Benard Korir
+Julius Kiptoo
+
+# Comprehensive sweep 2 (top 300 per distance/gender)
+
+# 21.1K M
+Vjacheslav Bamban
+Petr Kulikov
+Evgenii Lavrikov
+Janis Nukis
+Magnus Brath Skurdal
+Tom Arthur
+Vctor Afanasiev
+Viktor Afanasiev
+Markus Hauge-Espelien
+Jekabs Niklavs Janovs
+Pal August Graff Overby
+Sami Honkala
+Uros Rozman
+Daniel Kern
+Tony Sainsorny
+Eliott Mermans
+Iiro Fager
+Ivo Vancans
+Adam Hart
+Russ Hall
+Manu Kauppila
+Helmuts Gusts
+Matthew Xuereb
+Kris Robbins
+Matthew Sharp
+Rob Hughes
+Petri Leppänen
+Roman Gorshenin
+
+# 21.1K N
+Elena Skoblina
+Darina Maksimova
+Karina Korkma
+Emili Korsakas
+Santa Feldmane
+Josefin Sasse
+Kateryna Zhabotynska
+Jessica Bonet Bonet
+Robert Kelly
+Riikka Pynnönen
+Wendy Smith
+Satu Kaarlela
+Saara Kauranen
+Kaia Sofie Engeset
+Tora Husum Kristensen
+Kristine Rozmianeca
+Gunita Osheniece
+Santa Suta-Zute
+Janita Bergström
+
+# 42.2K M
+Mikhail Barchenkov
+Petteri Kuorikoski
+Janne Inkinen
+Matthew French
+Morten Aleksander Hopen
+Valerii Svechikhin
+Paulius Stankevicius
+Liam Culliford
+Maksim Voronkov
+Denis Dudchenko
+Nerijus Vilutis
+Przemyslaw Tokarek
+David Rördam Söndergard
+Oskars Cimermanis
+Frans Lehtovirta
+Erik Eriksson
+Dominic Mccarter
+Valtteri Vapola
+Tuomas Eloholma
+John Baslington
+Kasper Mahlamäki
+Max Frost
+Floris Van Den Abbeele
+Martin Haider
+Dennis Mehlfeld
+Jesper Greve
+Tomasz Furman
+Slawomir Rusak
+Laurent Jugant
+Simon Bloss
+Vladimir Shcheblykin
+Adam Dennis
+Johan Jafner
+Simo Vänttinen
+Markus Välimäki
+Peter Sandström
+Pavels Belajevs
+Ian Adamson
+Josh Wetherall
+Ronalds Vitols
+Sergei Nalkin
+Igor Perepech
+Vasco Tavares
+Gatis Pucitis
+Oliver Riley
+Oskar Aaltonen
+Johannes Pietilä
+Matthew Hunt
+Alistair Watson
+Daniel Collis
+Toms Duzis
+Mario Zimmermann
+
+# 42.2K N
+Kaisa Taina
+Ingrid Mutter-Wilhelm
+Ulrika Linge
+Milka Koskipirtti
+Neea Hassinen
+Tatiana Maslova
+Tuula Sivander-Heinonen
+Kerttu Nironen
+Salla Alopaeus
+Ida-Maaria Lassila
+Darius Remeika
+Marie-Louise Carp
+Hertta Lempessalmi
+Heidi Johansen
+Maria Jansson
+Svetlana Wojciechowska
+Tinya Tillander
+Fabianne Pinheiro
+Iwona Augustynska-Smietalo
+Elisa Kosonen
+Margarita Migranova
+India Spoor
+Katherine Gardner
+Isobel Royce
+Nadegda Ovchinnikova
+Kiira Meriläinen
+Jente Marit Althuis
+Katja Kujo
+Heli Iso-Järvenpää
+Randi Østhus
+Michelle Van Hooft
+Sandra Dervinika
+Mari Kanerva
+Outi Kokkonen
+Pauliina Kulman
+Hanna Bjerknes
+Esme Arkinstall
+Fjola Drofn Gudmundsdottir
+Rebecca Glover
+Sarah Haider
+Yana Fandziukhina
+Lotta Nyberg
+Johanna Katajisto
+Evita Ruskova
+Laura Nissinen
+Valeria Barausova
+
+# Latvian
+Agnis Stulpinskis
+Arturs Medveds
+Marat Kulmatickii
+Alexander Moiseev
+Andis Grandans
+Atis Jansons
+Arturs Silgals
+Ivars Valtass
+Baiba Muzikante
+Arturs Sisolatins
+Alekss Janis Razinskis
+Ritvars Lerme
+Andrejs Demesko
+Andrejs Žaglovs
+Arvis Grencbergs
+Benita Bikulce
+Anita Ievina
+
+# Lithuanian
+Algirdas Tamasaitis
+Arunas Vaisvila
+Andrius Slavickas
+
+# Finnish
+Carita Riutta
+Jani Ylisaukko-Oja
+Pasi Mattila
+Antti Kaasalainen
+Aleksi Huuha
+Anna-Mari Knuuti
+Mari Nieminen
+Aino Niemi
+Aino Hokkanen
+Anniina Korkiakoski
+Anne Virtanen
+Ravinder Kohtaniemi
+
+# Norwegian/Swedish/Danish
+Anniken Holst
+Lynette Porter
+Kamilla Nesset Saltermark
+Jakob Lindholm
+Kent Lindholm
+Mark Van Den Bosch Olsen
+Emilia Stahlberg
+
+# Russian/Other visitors
+Alexey Belousov
+Sergey Semenov
+Cain Christoforou
+Christopher Sellens
+Calum Murphy
+Anton Cherniaev
+Aleksey Elbek
+Andrei Ivoilov
+Champeval Catia Ientz
+Alessandra Bayly
+Sarah Dooley
+Claire Nance
+Andrea Crippa

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47803c2bad0e2e7fb4923114781412e30a532a1ade40ec080e9d99a1f86a83e5
-size 251
+# Excluded result IDs: these are skipped during DB upsert
+# Format: one result ID per line
+# Lines starting with # are ignored
+
+# Tauno Vare vale tulemus 7. ETAPP / Pääsküla raba (00:13:35, distants pole tegelikult 5K)
+7-etapp-merimets_default_666

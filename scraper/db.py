@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 
 EXCLUDED_RESULTS_PATH = Path("data/excluded_results.txt")
+EXCLUDED_EVENTS_PATH = Path("data/excluded_events.txt")
 
 
 def _load_excluded_results() -> set[str]:
@@ -14,6 +15,26 @@ def _load_excluded_results() -> set[str]:
         if not line or line.startswith("#"):
             continue
         excluded.add(line)
+    return excluded
+
+
+def load_excluded_events(con=None) -> set[str]:
+    if not EXCLUDED_EVENTS_PATH.exists():
+        return set()
+    excluded = set()
+    for line in EXCLUDED_EVENTS_PATH.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.isdigit() and con is not None:
+            row = con.execute(
+                "SELECT id FROM (SELECT ROW_NUMBER() OVER (ORDER BY date, id) AS num, id FROM events) WHERE num = ?",
+                [int(line)],
+            ).fetchone()
+            if row:
+                excluded.add(row[0])
+        else:
+            excluded.add(line)
     return excluded
 
 

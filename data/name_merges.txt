@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a779d3fe79b8228607d067dbe5120d662c096b5e7a2d4b279e220aca7bc6440
-size 1504
+# Runner name merges: variant -> canonical
+# Format: variant_name -> canonical_name
+# Lines starting with # are ignored
+
+# Liis-Grete Hussar
+Liis-Grete Arro -> Liis-Grete Hussar
+Liis Grete Hussar -> Liis-Grete Hussar
+Liis Grete Arro -> Liis-Grete Hussar
+
+# Vjatšeslav Košelev
+Vjatseslav Koselev -> Vjatšeslav Košelev
+Vjatseslav Koshelev -> Vjatšeslav Košelev
+Vjatseslav Košelev -> Vjatšeslav Košelev
+Vjatsešlav Košelev -> Vjatšeslav Košelev
+Vjatsheslav Koshelev -> Vjatšeslav Košelev
+Vjatsěslav Košelev -> Vjatšeslav Košelev
+VjatŠeslav Košelev -> Vjatšeslav Košelev
+VjatEslav KoElev -> Vjatšeslav Košelev
+Vjatðeslav Koshelev -> Vjatšeslav Košelev
+Vjatðeslav Koðelev -> Vjatšeslav Košelev
+Vjatúeslav Koúelev -> Vjatšeslav Košelev
+Vyasheslav Koshelev -> Vjatšeslav Košelev
+Vjacheslav Koshelev -> Vjatšeslav Košelev
+Vjatšeslav Koselev -> Vjatšeslav Košelev
+
+# Deniss Košelev
+Denis Koselev -> Deniss Košelev
+Denis Košelev -> Deniss Košelev
+Deniss Koselev -> Deniss Košelev
+Deniss Koshelev -> Deniss Košelev
+Deniss KoElev -> Deniss Košelev
+Deniss Koðelev -> Deniss Košelev
+
+# Sergei Tšerepannikov
+Sergei Tserepannikov -> Sergei Tšerepannikov
+Sergei Tðerepannikov -> Sergei Tšerepannikov
+Sergei Tšerapannikov -> Sergei Tšerepannikov
+
+# Deniss Šalkauskas
+Denis Shalkauskas -> Deniss Šalkauskas
+Deniss Shalkauskas -> Deniss Šalkauskas
+Deniss Alkauskas -> Deniss Šalkauskas
+Deniss ?alkauskas -> Deniss Šalkauskas
+
+Natalia Sokolova -> Natalja Sokolova
